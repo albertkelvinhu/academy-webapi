@@ -191,7 +191,7 @@ module.exports = function(Report) {
                 }
             }, 0);
 
-            if(sumBudget!=0&&sumElapsed!=0){
+            if((sumBudget!=0&&sumElapsed!=0)||sumBudget!=null&&sumBudget!=null){
                 efficiency = ((sumBudget/(sumElapsed/3600))*100).toFixed(2);
             }else{
                 efficiency = " - "
@@ -255,7 +255,7 @@ module.exports = function(Report) {
                 }
             }, 0);
 
-            if(sumBudget!=0&&sumElapsed!=0){
+            if(sumBudget!=0&&sumElapsed!=0||sumBudget!=null&&sumBudget!=null){
                 efficiency = ((sumBudget/(sumElapsed/3600))*100).toFixed(2);
             }else{
                 efficiency = " - "
